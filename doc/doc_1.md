@@ -1,6 +1,8 @@
 
 npm init 
+
 npm i --save-dev electron
+
 npm i jquery
 
 
