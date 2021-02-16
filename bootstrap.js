@@ -14,12 +14,15 @@ function createWindow () {
     }
   }) */
 
-  const win = new BrowserWindow({
-    width: 345,
-    height: 360
-  })
+    const win = new BrowserWindow({
+        width: 345,
+        height: 360,
+        webPreferences: {
+            nodeIntegration: true
+        }
+    })
 
-  win.loadFile('index.html')
+    win.loadFile('index.html')
 
 
 }
