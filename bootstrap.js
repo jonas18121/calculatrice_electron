@@ -6,19 +6,22 @@ const url = require('url')
 let win
 
 function createWindow () {
-  const win = new BrowserWindow({
+  /* const win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
       nodeIntegration: true
     }
+  }) */
+
+  const win = new BrowserWindow({
+    width: 345,
+    height: 360
   })
 
   win.loadFile('index.html')
 
-  /* win.on('closed', () => {
-      win = null
-  }) */
+
 }
 
 app.whenReady().then(createWindow)
